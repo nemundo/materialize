@@ -1,0 +1,17 @@
+{
+    "name": "nemundo/materialize",
+    "description": "Materialize Design based on Html Rendering",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nemundo",
+            "email": "urs.lang@gmail.com"
+        }
+    ],
+    "require": {
+        "nemundo/html": "*"
+    },
+    "autoload": {
+        "psr-4": {"Nemundo\\Materialize\\": "src/"}
+    }
+}

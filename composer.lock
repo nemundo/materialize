@@ -1,0 +1,48 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "ebae58d31be543701f5c40c0fb623b4f",
+    "packages": [
+        {
+            "name": "nemundo/html",
+            "version": "0.23",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nemundo/html.git",
+                "reference": "74e1e6ed5b9d21d4394754e539f9c89933402fc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nemundo/html/zipball/74e1e6ed5b9d21d4394754e539f9c89933402fc4",
+                "reference": "74e1e6ed5b9d21d4394754e539f9c89933402fc4",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nemundo\\Html\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Nemundo",
+                    "email": "urs.lang@gmail.com"
+                }
+            ],
+            "description": "Html Generator",
+            "time": "2019-04-11T09:37:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
