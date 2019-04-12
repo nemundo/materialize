@@ -3,7 +3,16 @@
 namespace Nemundo\Materialize\Package;
 
 
-class MaterializePackage
+use Nemundo\Com\Package\AbstractPackage;
+
+class MaterializePackage extends AbstractPackage
 {
+
+    protected function loadPackage()
+    {
+
+        $this->addCss('css/materialize.css');
+
+    }
 
 }
