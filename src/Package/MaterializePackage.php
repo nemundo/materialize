@@ -4,6 +4,7 @@ namespace Nemundo\Materialize\Package;
 
 
 use Nemundo\Com\Package\AbstractPackage;
+use Nemundo\Materialize\MaterializeProject;
 
 class MaterializePackage extends AbstractPackage
 {
@@ -11,7 +12,10 @@ class MaterializePackage extends AbstractPackage
     protected function loadPackage()
     {
 
-        $this->addCss('css/materialize.css');
+        $this->project = new MaterializeProject();
+        $this->packageName = 'materialize';
+        $this->addCss('css/materialize.min.css');
+        $this->addJs('js/materialize.min.js');
 
     }
 

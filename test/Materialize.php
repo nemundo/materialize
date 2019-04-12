@@ -1,7 +1,7 @@
 <?php
 
-require '../vendor/autoload.php';
 
+require __DIR__.'/config.php';
 
 
 
