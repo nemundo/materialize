@@ -8,6 +8,7 @@ use Nemundo\Com\FormBuilder\Item\AbstractDatePicker;
 use Nemundo\Com\FormBuilder\Item\AbstractTextBox;
 use Nemundo\Html\Form\Formatting\Label;
 use Nemundo\Html\Formatting\Bold;
+use Nemundo\Package\Jquery\Package\JqueryPackage;
 
 class MaterializeDatePicker extends AbstractTextBox  // AbstractDatePicker
 {
@@ -16,6 +17,8 @@ class MaterializeDatePicker extends AbstractTextBox  // AbstractDatePicker
 
     public function getHtml()
     {
+
+        //$this->addPackage(new JqueryPackage());
 
         $this->prepareHtml();
 

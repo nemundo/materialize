@@ -5,7 +5,7 @@ namespace Nemundo\Materialize\Button;
 
 use Nemundo\Com\Html\Hyperlink\SiteHyperlink;
 
-class MaterializeButton extends SiteHyperlink
+class MaterializeSiteButton extends SiteHyperlink
 {
 
     /**
@@ -17,6 +17,8 @@ class MaterializeButton extends SiteHyperlink
     {
 
         $this->addCssClass('waves-effect waves-light btn');
+
+        $this->addCssClass('orange');
 
         if ($this->disabled) {
             $this->addCssClass('disabled');

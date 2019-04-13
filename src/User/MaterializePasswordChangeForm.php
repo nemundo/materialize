@@ -3,9 +3,9 @@
 namespace Nemundo\Materialize\User;
 
 
-use Nemundo\Bootstrap\FormElement\BootstrapPasswordTextBox;
+
+use Nemundo\Materialize\Form\Item\MaterializePasswordTextBox;
 use Nemundo\Materialize\Form\MaterializeForm;
-use Nemundo\Materialize\FormItem\MaterializePasswordTextBox;
 use Nemundo\User\Type\UserSessionType;
 
 class MaterializePasswordChangeForm extends MaterializeForm
@@ -17,14 +17,14 @@ class MaterializePasswordChangeForm extends MaterializeForm
     public $userId;
 
     /**
-     * @var BootstrapPasswordTextBox
+     * @var MaterializePasswordTextBox
      */
     private $password;
 
     public function getHtml()
     {
 
-        $this->submitButton->content = 'Change Password';
+        $this->submitButton->label = 'Change Password';
 
         $this->password = new MaterializePasswordTextBox($this);
         $this->password->label = 'New Password';
@@ -40,24 +40,6 @@ class MaterializePasswordChangeForm extends MaterializeForm
 
         $userSession = new UserSessionType();
         $userSession->changePassword($this->password->getValue());
-
-
-        /*
-        $password = $this->password->getValue();
-
-        $userItem = new UserItem($this->userId);
-        $userItem->changePassword($password);
-
-        $userRow = (new UserReader())->getRowById($this->userId);
-
-        $userLogin = new UserLogin();
-        $userLogin->login =$userRow->login;
-        $userLogin->password = $password;
-        $userLogin->loginUser();
-
-        $redirect = new UrlRedirect();
-        $redirect->url = WebConfig::$webUrl;
-        $redirect->redirect();*/
 
     }
 

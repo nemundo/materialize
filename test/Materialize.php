@@ -22,7 +22,7 @@ $p = new \Nemundo\Html\Paragraph\Paragraph($document);
 $p->content = '123123123123123123123';
 
 
-$btn = new \Nemundo\Materialize\Button\MaterializeButton($document);
+$btn = new \Nemundo\Materialize\Button\MaterializeSiteButton($document);
 $btn->site = new Nemundo\Web\Site\Site();
 $btn->site->title = 'Reload';
 

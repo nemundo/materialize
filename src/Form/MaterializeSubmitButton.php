@@ -13,14 +13,10 @@ class MaterializeSubmitButton extends SubmitButton
     {
 
         $this->addCssClass('btn waves-effect waves-light');
+        $this->addCssClass('orange');
+
 
         return parent::getHtml();
     }
-
-
-    /*
-<button class="btn waves-effect waves-light" type="submit" name="action">Submit
-<i class="Materialize-icons right">send</i>
-</button>*/
 
 }

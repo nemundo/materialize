@@ -4,6 +4,7 @@ namespace Nemundo\Materialize\Form;
 
 
 use Nemundo\Com\FormBuilder\AbstractFormBuilder;
+use Nemundo\Core\Language\LanguageCode;
 
 class MaterializeForm extends AbstractFormBuilder
 {
@@ -17,6 +18,8 @@ class MaterializeForm extends AbstractFormBuilder
     {
 
         $this->submitButton = new MaterializeSubmitButton();
+        $this->submitButton->label = 'Save';
+        //[LanguageCode::]
 
 
         parent::loadContainer();
